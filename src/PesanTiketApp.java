@@ -5,13 +5,13 @@ public class PesanTiketApp {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Selamat datang di program pemesanan tiket!");
-        System.out.println("Masukkan nama pembeli: ");
+        System.out.print("Masukkan nama pembeli: ");
         String nama = scanner.nextLine();
 
         System.out.println("\nPilih tahap pembelian: ");
         System.out.println("1. Presale");
         System.out.println("2. Reguler");
-        System.out.println("Pilih tahap pembelian (1/2): ");
+        System.out.print("Pilih tahap pembelian (1/2): ");
         int tahapPembelian = scanner.nextInt();
 
         Tiket tiket = null;
@@ -19,7 +19,7 @@ public class PesanTiketApp {
             System.out.println("\nPilih jenis tiket:");
             System.out.println("1. VIP");
             System.out.println("2. VVIP");
-            System.out.println("Pilih jenis tiket (1/2): ");
+            System.out.print("Pilih jenis tiket (1/2): ");
             int jenisTiket = scanner.nextInt();
             if (jenisTiket == 1 ) {
                 tiket = new VIP(150 * 0.8);
@@ -35,7 +35,7 @@ public class PesanTiketApp {
             System.out.println("1. Festival");
             System.out.println("2. VIP");
             System.out.println("3. VVIP");
-            System.out.println("Pilih jenis tiket (1/2/3): ");
+            System.out.print("Pilih jenis tiket (1/2/3): ");
             int jenisTiket = scanner.nextInt();
             if (jenisTiket == 1) {
                 tiket = new Festival(100);
